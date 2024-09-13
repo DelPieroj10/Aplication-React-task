@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import YellowDragonLogo from './Components/yellowdragon-logo';
+import TasksList from './Components/Taskslist'
+//import Task from './Components/Tasks'; // *This is a test done before to verify that the code is working well.
+
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='aplication-tasks'>
+       <YellowDragonLogo />
+    <div className='principal-tasks-list'>
+      <h1>My Tasks</h1>
+      {/* <Task /> */}
+      <TasksList />
+    </div>   
     </div>
+
   );
-}
+};
 
 export default App;
